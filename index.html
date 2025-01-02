@@ -4,64 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Imágenes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        #menu {
-            margin: 20px;
-        }
-        #imagen {
-            width: 80%;
-            height: auto;
-            border: 2px solid #ccc;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <h1>Galería de Imágenes</h1>
     
-    <!-- Menú para seleccionar imágenes -->
-    <div id="menu">
-        <label for="imagenSelect">Elige una imagen:</label>
-        <select id="imagenSelect" onchange="cambiarImagen()">
-            <option value="1">Imagen 1</option>
-            <option value="2">Imagen 2</option>
-            <option value="3">Imagen 3</option>
-            <option value="4">Imagen 4</option>
-        </select>
-    </div>
+    <img src="https://raw.githubusercontent.com/usuario/repositorio/rama/imagen1.jpg" alt="Imagen 1" width="500">
+    <br><br>
+    <img src="https://raw.githubusercontent.com/usuario/repositorio/rama/imagen2.jpg" alt="Imagen 2" width="500">
+    <br><br>
+    <img src="https://raw.githubusercontent.com/usuario/repositorio/rama/imagen3.jpg" alt="Imagen 3" width="500">
+    <br><br>
+    <img src="https://raw.githubusercontent.com/usuario/repositorio/rama/imagen4.jpg" alt="Imagen 4" width="500">
 
-    <!-- Imagen a mostrar -->
-    <img id="imagen" src="https://github.com/Dug-Max/pruebac/main/imagen1.jpg" alt="Imagen 1">
-
-    <script>
-        function cambiarImagen() {
-            // Obtiene el valor seleccionado del menú
-            var seleccion = document.getElementById('imagenSelect').value;
-            var imagen = document.getElementById('imagen');
-            
-            // Cambia la URL de la imagen según la selección
-            switch (seleccion) {
-                case "1":
-                    imagen.src = "https://github.com/Dug-Max/pruebac/blob/main/imagen1.jpg";
-                    break;
-                case "2":
-                    imagen.src = "https://github.com/Dug-Max/pruebac/imagen2.jpg";
-                    break;
-                case "3":
-                    imagen.src = "https://github.com/Dug-Max/pruebac/imagen3.jpg";
-                    break;
-                case "4":
-                    imagen.src = "https://github.com/Dug-Max/pruebac/imagen4.jpg";
-                    break;
-                default:
-                    imagen.src = "https://github.com/Dug-Max/pruebac/imagen1.jpg";
-                    break;
-            }
-        }
-    </script>
 </body>
 </html>
